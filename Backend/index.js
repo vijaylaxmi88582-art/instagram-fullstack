@@ -20,6 +20,7 @@ app.use(cors({
   credentials: true
 }))
 app.use(express.json());
+app.set("trust proxy", 1);
 app.use(cookieParser())
 
 app.use("/api/auth",authRouter)
