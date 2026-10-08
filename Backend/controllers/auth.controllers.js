@@ -1,5 +1,5 @@
 import genToken from "../config/token.js";
-import User from "../models/user.Model.js";
+import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import sendEmail from "../config/Mail.js"; // Apne path ke hisab se change kar lena
 
