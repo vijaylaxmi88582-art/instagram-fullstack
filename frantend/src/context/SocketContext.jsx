@@ -20,7 +20,8 @@ export const SocketContextProvider = ({ children }) => {
 				query: {
 					userId: userData._id,
 				},
-				transports: ["websocket"]
+				transports: ["polling", "websocket"],
+				withCredentials: true
 			});
 
 			setSocket(socket);
