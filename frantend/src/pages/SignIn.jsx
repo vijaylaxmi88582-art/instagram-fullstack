@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import { useDispatch } from "react-redux";
 import { setUserData } from '../redux/userSlice';
 
-const serverUrl = import.meta.env.VITE_SERVER_URL || 'http://localhost:8000'
+import { serverUrl } from '../App'
 
 const SignIn = () => {
   const [inputClicked, setInputClicked] = useState({
