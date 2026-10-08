@@ -7,7 +7,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "https://instagram-fullstack-9q7y.onrender.com",
+        origin: ["https://instagram-fullstack-nine.vercel.app", "http://localhost:5173"],
         methods: ["GET", "POST"],
         credentials: true
     }

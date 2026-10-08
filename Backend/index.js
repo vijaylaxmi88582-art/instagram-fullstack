@@ -16,7 +16,8 @@ dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 app.use(cors({
-  origin:"https://instagram-fullstack-9q7y.onrender.com",credentials:true
+  origin: ["https://instagram-fullstack-nine.vercel.app", "http://localhost:5173"],
+  credentials: true
 }))
 app.use(express.json());
 app.use(cookieParser())
