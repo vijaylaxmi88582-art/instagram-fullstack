@@ -53,12 +53,12 @@ const SignIn = () => {
 
           <div className='relative flex items-center justify-start w-[90%] h-[50px] rounded-2xl border-2 border-black mt-[30px]' onClick={() => setInputClicked({ ...inputClicked, userName: true })}>
             <label htmlFor="userName" className={`text-gray-700 absolute left-[20px] bg-white text-[15px] ${inputClicked.userName ? "top-[-10px] text-[12px]" : ""}`}>Enter UserName</label>
-            <input type='text' id='userName' className='w-full h-full rounded-2xl px-[20px] outline-none border-0' required onChange={(e) => setUserName(e.target.value)} value={userName} />
+            <input type='text' id='userName' className='w-full h-full rounded-2xl px-[20px] outline-none border-0 text-black bg-transparent' required onChange={(e) => setUserName(e.target.value)} value={userName} />
           </div>
 
           <div className='relative flex items-center justify-start w-[90%] h-[50px] rounded-2xl border-2 border-black' onClick={() => setInputClicked({ ...inputClicked, password: true })}>
             <label htmlFor="password" className={`text-gray-700 absolute left-[20px] bg-white text-[15px] ${inputClicked.password ? "top-[-10px] text-[12px]" : ""}`}>Enter Password</label>
-            <input type={showPassword ? 'text' : 'password'} id='password' className='w-full h-full rounded-2xl px-[20px] outline-none border-0' required onChange={(e) => setPassword(e.target.value)} value={password} />
+            <input type={showPassword ? 'text' : 'password'} id='password' className='w-full h-full rounded-2xl px-[20px] outline-none border-0 text-black bg-transparent' required onChange={(e) => setPassword(e.target.value)} value={password} />
             {!showPassword
               ? <IoIosEye className='absolute cursor-pointer right-[20px] w-[25px] h-[25px] text-gray-500' onClick={() => setShowPassword(true)} />
               : <IoIosEyeOff className='absolute cursor-pointer right-[20px] w-[25px] h-[25px] text-gray-500' onClick={() => setShowPassword(false)} />

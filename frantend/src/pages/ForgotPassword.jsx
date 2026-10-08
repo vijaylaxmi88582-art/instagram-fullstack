@@ -127,7 +127,7 @@ const ForgotPassword = () => {
             <input
               type="email"
               id="email"
-              className="w-full h-full rounded-2xl px-[20px] outline-none border-0"
+              className="w-full h-full rounded-2xl px-[20px] outline-none border-0 text-black bg-transparent"
               required
               onChange={(e) => setEmail(e.target.value)}
               value={email}
@@ -170,7 +170,7 @@ const ForgotPassword = () => {
             <input
               type="text"
               id="otp"
-              className="w-full h-full rounded-2xl px-[20px] outline-none border-0"
+              className="w-full h-full rounded-2xl px-[20px] outline-none border-0 text-black bg-transparent"
               required
               onChange={(e) => setOtp(e.target.value)}
               value={otp}
@@ -217,7 +217,7 @@ const ForgotPassword = () => {
             <input
               type="password"
               id="newPassword"
-              className="w-full h-full rounded-2xl px-[20px] outline-none border-0"
+              className="w-full h-full rounded-2xl px-[20px] outline-none border-0 text-black bg-transparent"
               required
               onChange={(e) => setNewPassword(e.target.value)}
               value={newPassword}
@@ -247,7 +247,7 @@ const ForgotPassword = () => {
             <input
               type="password"
               id="confirmPassword"
-              className="w-full h-full rounded-2xl px-[20px] outline-none border-0"
+              className="w-full h-full rounded-2xl px-[20px] outline-none border-0 text-black bg-transparent"
               required
               onChange={(e) =>
                 setConfirmPassword(e.target.value)
