@@ -36,6 +36,7 @@ const Profile = () => {
     const handleLogOut=async()=>{
       try{
         const result=await axios.get(`${serverUrl}/api/auth/signout`,{withCredentials:true})
+        localStorage.removeItem('token');
         dispatch(setUserData(null))
       } catch(error){
         console.log(error)

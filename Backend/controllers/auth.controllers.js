@@ -43,7 +43,7 @@ export const signUp = async (req, res) => {
       sameSite: "None",
     });
 
-    return res.status(201).json(user);
+    return res.status(201).json({ ...user.toObject(), token });
   } catch (error) {
     console.log(error);
     return res.status(500).json({ message: error.message });
@@ -77,7 +77,7 @@ export const signIn = async (req, res) => {
       sameSite: "None",
     });
 
-    return res.status(200).json(user);
+    return res.status(200).json({ ...user.toObject(), token });
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }

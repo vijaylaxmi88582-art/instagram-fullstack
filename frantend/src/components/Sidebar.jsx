@@ -32,6 +32,7 @@ const Sidebar = () => {
   const handleLogOut = async () => {
     try {
       await axios.get(`${serverUrl}/api/auth/signout`, { withCredentials: true })
+      localStorage.removeItem('token');
       dispatch(setUserData(null))
       navigate("/signin")
     } catch (error) {

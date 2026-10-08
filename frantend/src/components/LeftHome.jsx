@@ -24,6 +24,7 @@ const LeftHome = () => {
 
       console.log(result.data)
 
+      localStorage.removeItem('token');
       dispatch(setUserData(null))
 
     } catch (error) {

@@ -31,6 +31,9 @@ const SignIn = () => {
         userName,
         password
       }, { withCredentials: true })
+      if (result.data.token) {
+        localStorage.setItem('token', result.data.token);
+      }
       dispatch(setUserData(result.data))
       setLoading(false)
     } catch (error) {
